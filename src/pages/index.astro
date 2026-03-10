@@ -1,0 +1,72 @@
+---
+import Layout from "../layouts/Layout.astro";
+---
+
+<Layout title="McNeill Services — Affordable Pools & Back Patios">
+  <!-- Hero -->
+  <section class="relative flex min-h-[70vh] items-center justify-center bg-navy text-white">
+    <div class="absolute inset-0 bg-gradient-to-br from-navy via-navy-light to-pool-blue opacity-90"></div>
+    <div class="relative z-10 mx-auto max-w-4xl px-6 text-center">
+      <img
+        src="/images/logo.jpeg"
+        alt="McNeill Services logo"
+        width="80"
+        height="80"
+        class="mx-auto mb-6 rounded-full shadow-lg"
+      />
+      <h1 class="text-4xl font-extrabold tracking-tight sm:text-5xl md:text-6xl">
+        Affordable Pools &amp; Back Patios
+      </h1>
+      <p class="mt-4 text-lg text-pool-blue-light sm:text-xl">
+        Quality craftsmanship at honest prices — serving the Houston area.
+      </p>
+      <div class="mt-8 flex flex-col items-center gap-4 sm:flex-row sm:justify-center">
+        <a
+          href="/contact"
+          class="rounded-lg bg-gold px-8 py-3 font-semibold text-navy shadow-md transition hover:bg-gold-light"
+        >
+          Get a Free Quote
+        </a>
+        <a
+          href="tel:+18325551234"
+          class="rounded-lg border border-white/30 px-8 py-3 font-semibold transition hover:bg-white/10"
+        >
+          Call Now
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Services -->
+  <section class="mx-auto max-w-6xl px-6 py-20">
+    <h2 class="text-center text-3xl font-bold text-navy">What We Build</h2>
+    <div class="mt-12 grid gap-8 sm:grid-cols-2">
+      <div class="rounded-2xl border border-stone/20 p-8 shadow-sm transition hover:shadow-md">
+        <h3 class="text-xl font-bold text-navy">Custom Pools</h3>
+        <p class="mt-3 text-charcoal/80">
+          Gunite pools, spas, water features, lighting, and decking — designed to fit your yard and
+          budget.
+        </p>
+      </div>
+      <div class="rounded-2xl border border-stone/20 p-8 shadow-sm transition hover:shadow-md">
+        <h3 class="text-xl font-bold text-navy">Back Patios</h3>
+        <p class="mt-3 text-charcoal/80">
+          Flagstone, stamped concrete, fire pits, outdoor kitchens, and pergolas — your perfect
+          outdoor living space.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA -->
+  <section class="bg-pool-blue py-16 text-center text-white">
+    <h2 class="text-3xl font-bold">Ready to Get Started?</h2>
+    <p class="mt-3 text-lg text-white/80">Free consultations — no obligation.</p>
+    <a
+      href="/contact"
+      class="mt-6 inline-block rounded-lg bg-gold px-10 py-3 font-semibold text-navy shadow-md transition hover:bg-gold-light"
+    >
+      Schedule Your Free Consultation
+    </a>
+  </section>
+</Layout>
