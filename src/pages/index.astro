@@ -4,8 +4,19 @@ import Layout from "../layouts/Layout.astro";
 
 <Layout title="McNeill Services — Affordable Pools & Back Patios | Houston">
   <!-- Hero -->
-  <section class="relative flex min-h-[85vh] items-center justify-center bg-navy text-white">
-    <div class="absolute inset-0 bg-gradient-to-br from-navy via-navy-light to-pool-blue opacity-95"></div>
+  <section class="relative flex min-h-[85vh] items-center justify-center bg-navy text-white overflow-hidden">
+    <!-- Video Background -->
+    <video
+      autoplay
+      muted
+      loop
+      playsinline
+      class="absolute inset-0 h-full w-full object-cover"
+    >
+      <source src="/videos/hero-bg.mp4" type="video/mp4" />
+    </video>
+    <!-- Dark Overlay -->
+    <div class="absolute inset-0 bg-navy/70"></div>
     <div class="relative z-10 mx-auto max-w-5xl px-6 py-20 text-center">
       <!-- Trust Badge -->
       <div class="mb-8 inline-flex items-center gap-2 rounded-full bg-white/10 px-4 py-2 text-sm backdrop-blur-sm">
