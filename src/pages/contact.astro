@@ -1,0 +1,227 @@
+---
+import Layout from "../layouts/Layout.astro";
+---
+
+<Layout title="Contact Us — McNeill Services" description="Get a free quote for your pool or patio project. Contact McNeill Services today.">
+  <!-- Hero -->
+  <section class="bg-navy py-16 text-white">
+    <div class="mx-auto max-w-4xl px-6 text-center">
+      <h1 class="text-4xl font-extrabold sm:text-5xl">Let's Talk About Your Project</h1>
+      <p class="mt-4 text-lg text-pool-blue-light">
+        Fill out the form below or give us a call. Free estimates, no obligation.
+      </p>
+    </div>
+  </section>
+
+  <!-- Contact Content -->
+  <section class="py-20">
+    <div class="mx-auto max-w-6xl px-6">
+      <div class="grid gap-12 lg:grid-cols-2">
+        <!-- Contact Form -->
+        <div>
+          <h2 class="text-2xl font-bold text-navy">Request a Free Quote</h2>
+          <p class="mt-2 text-charcoal/70">
+            Tell us about your project and we'll get back to you within 24 hours.
+          </p>
+
+          <form class="mt-8 space-y-6" action="https://formspree.io/f/YOUR_FORM_ID" method="POST">
+            <div class="grid gap-6 sm:grid-cols-2">
+              <div>
+                <label for="firstName" class="block text-sm font-medium text-charcoal">First Name *</label>
+                <input
+                  type="text"
+                  id="firstName"
+                  name="firstName"
+                  required
+                  class="mt-1 block w-full rounded-lg border border-stone/30 px-4 py-3 text-charcoal transition focus:border-pool-blue focus:outline-none focus:ring-2 focus:ring-pool-blue/20"
+                />
+              </div>
+              <div>
+                <label for="lastName" class="block text-sm font-medium text-charcoal">Last Name *</label>
+                <input
+                  type="text"
+                  id="lastName"
+                  name="lastName"
+                  required
+                  class="mt-1 block w-full rounded-lg border border-stone/30 px-4 py-3 text-charcoal transition focus:border-pool-blue focus:outline-none focus:ring-2 focus:ring-pool-blue/20"
+                />
+              </div>
+            </div>
+
+            <div class="grid gap-6 sm:grid-cols-2">
+              <div>
+                <label for="email" class="block text-sm font-medium text-charcoal">Email *</label>
+                <input
+                  type="email"
+                  id="email"
+                  name="email"
+                  required
+                  class="mt-1 block w-full rounded-lg border border-stone/30 px-4 py-3 text-charcoal transition focus:border-pool-blue focus:outline-none focus:ring-2 focus:ring-pool-blue/20"
+                />
+              </div>
+              <div>
+                <label for="phone" class="block text-sm font-medium text-charcoal">Phone *</label>
+                <input
+                  type="tel"
+                  id="phone"
+                  name="phone"
+                  required
+                  class="mt-1 block w-full rounded-lg border border-stone/30 px-4 py-3 text-charcoal transition focus:border-pool-blue focus:outline-none focus:ring-2 focus:ring-pool-blue/20"
+                />
+              </div>
+            </div>
+
+            <div>
+              <label for="city" class="block text-sm font-medium text-charcoal">City / Area</label>
+              <input
+                type="text"
+                id="city"
+                name="city"
+                placeholder="e.g., Katy, Sugar Land, Cypress"
+                class="mt-1 block w-full rounded-lg border border-stone/30 px-4 py-3 text-charcoal transition focus:border-pool-blue focus:outline-none focus:ring-2 focus:ring-pool-blue/20"
+              />
+            </div>
+
+            <div>
+              <label for="services" class="block text-sm font-medium text-charcoal">What are you interested in?</label>
+              <select
+                id="services"
+                name="services"
+                class="mt-1 block w-full rounded-lg border border-stone/30 px-4 py-3 text-charcoal transition focus:border-pool-blue focus:outline-none focus:ring-2 focus:ring-pool-blue/20"
+              >
+                <option value="">Select a service...</option>
+                <option value="pool">Custom Pool</option>
+                <option value="spa">Spa / Hot Tub</option>
+                <option value="patio">Back Patio</option>
+                <option value="outdoor-kitchen">Outdoor Kitchen</option>
+                <option value="fire-feature">Fire Pit / Feature</option>
+                <option value="pergola">Pergola / Shade Structure</option>
+                <option value="complete">Complete Backyard Renovation</option>
+                <option value="other">Other</option>
+              </select>
+            </div>
+
+            <div>
+              <label for="budget" class="block text-sm font-medium text-charcoal">Approximate Budget</label>
+              <select
+                id="budget"
+                name="budget"
+                class="mt-1 block w-full rounded-lg border border-stone/30 px-4 py-3 text-charcoal transition focus:border-pool-blue focus:outline-none focus:ring-2 focus:ring-pool-blue/20"
+              >
+                <option value="">Select a range...</option>
+                <option value="under-25k">Under $25,000</option>
+                <option value="25k-50k">$25,000 - $50,000</option>
+                <option value="50k-75k">$50,000 - $75,000</option>
+                <option value="75k-100k">$75,000 - $100,000</option>
+                <option value="over-100k">$100,000+</option>
+                <option value="not-sure">Not sure yet</option>
+              </select>
+            </div>
+
+            <div>
+              <label for="message" class="block text-sm font-medium text-charcoal">Tell us about your project</label>
+              <textarea
+                id="message"
+                name="message"
+                rows="4"
+                placeholder="Describe your vision, timeline, or any questions you have..."
+                class="mt-1 block w-full rounded-lg border border-stone/30 px-4 py-3 text-charcoal transition focus:border-pool-blue focus:outline-none focus:ring-2 focus:ring-pool-blue/20"
+              ></textarea>
+            </div>
+
+            <button
+              type="submit"
+              class="w-full rounded-lg bg-navy px-8 py-4 text-lg font-semibold text-white shadow-md transition hover:bg-navy-light"
+            >
+              Send Request
+            </button>
+
+            <p class="text-center text-sm text-charcoal/60">
+              We'll respond within 24 hours. Your information is never shared.
+            </p>
+          </form>
+        </div>
+
+        <!-- Contact Info -->
+        <div class="lg:pl-12">
+          <h2 class="text-2xl font-bold text-navy">Get In Touch</h2>
+          <p class="mt-2 text-charcoal/70">
+            Prefer to talk? Give us a call or stop by. We're happy to answer questions.
+          </p>
+
+          <div class="mt-8 space-y-6">
+            <!-- Phone -->
+            <div class="flex items-start gap-4">
+              <div class="flex h-12 w-12 shrink-0 items-center justify-center rounded-xl bg-pool-blue/10 text-pool-blue">
+                <svg class="h-6 w-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z" />
+                </svg>
+              </div>
+              <div>
+                <h3 class="font-semibold text-navy">Phone</h3>
+                <a href="tel:+18325551234" class="text-charcoal/70 transition hover:text-pool-blue">(832) 555-1234</a>
+                <p class="mt-1 text-sm text-charcoal/50">Mon-Fri 8am-6pm, Sat 9am-2pm</p>
+              </div>
+            </div>
+
+            <!-- Email -->
+            <div class="flex items-start gap-4">
+              <div class="flex h-12 w-12 shrink-0 items-center justify-center rounded-xl bg-pool-blue/10 text-pool-blue">
+                <svg class="h-6 w-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
+                </svg>
+              </div>
+              <div>
+                <h3 class="font-semibold text-navy">Email</h3>
+                <a href="mailto:info@mcneillservicespools.com" class="text-charcoal/70 transition hover:text-pool-blue">info@mcneillservicespools.com</a>
+                <p class="mt-1 text-sm text-charcoal/50">We respond within 24 hours</p>
+              </div>
+            </div>
+
+            <!-- Service Area -->
+            <div class="flex items-start gap-4">
+              <div class="flex h-12 w-12 shrink-0 items-center justify-center rounded-xl bg-pool-blue/10 text-pool-blue">
+                <svg class="h-6 w-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z" />
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z" />
+                </svg>
+              </div>
+              <div>
+                <h3 class="font-semibold text-navy">Service Area</h3>
+                <p class="text-charcoal/70">Greater Houston Area</p>
+                <p class="mt-1 text-sm text-charcoal/50">Katy, Sugar Land, Cypress, The Woodlands & more</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Trust Badges -->
+          <div class="mt-12 rounded-2xl bg-warm-white p-6">
+            <h3 class="font-semibold text-navy">Why Choose McNeill Services</h3>
+            <ul class="mt-4 space-y-3">
+              <li class="flex items-center gap-3 text-sm text-charcoal/70">
+                <svg class="h-5 w-5 text-pool-blue" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd" /></svg>
+                Free, no-obligation estimates
+              </li>
+              <li class="flex items-center gap-3 text-sm text-charcoal/70">
+                <svg class="h-5 w-5 text-pool-blue" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd" /></svg>
+                Licensed, bonded & insured
+              </li>
+              <li class="flex items-center gap-3 text-sm text-charcoal/70">
+                <svg class="h-5 w-5 text-pool-blue" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd" /></svg>
+                15+ years of experience
+              </li>
+              <li class="flex items-center gap-3 text-sm text-charcoal/70">
+                <svg class="h-5 w-5 text-pool-blue" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd" /></svg>
+                Honest, transparent pricing
+              </li>
+              <li class="flex items-center gap-3 text-sm text-charcoal/70">
+                <svg class="h-5 w-5 text-pool-blue" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd" /></svg>
+                Family owned & operated
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+</Layout>
